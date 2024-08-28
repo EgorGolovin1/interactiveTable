@@ -13,6 +13,7 @@
     height: 24px;
     justify-content: center;
     width: 24px;
+
     svg {
       transform: scale(0);
       transition: transform 0.1s ease-out;
@@ -37,6 +38,5 @@
     font-weight: 600;
     line-height: 22.5px;
     user-select: none;
-    margin-left: 10px;
   }
 }

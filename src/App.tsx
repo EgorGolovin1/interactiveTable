@@ -1,6 +1,6 @@
-import ProjectList from "./components/ProjectList/ProjectList";
+import { Table } from "./components/Table/Table";
 function App() {
-  return <ProjectList />;
+  return <Table />;
 }
 
 export default App;

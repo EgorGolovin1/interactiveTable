@@ -1,0 +1,68 @@
+@keyframes appereance {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 40px;
+  }
+}
+@keyframes disappereance {
+  0% {
+    height: 40px;
+  }
+  100% {
+    height: 0;
+  }
+}
+.item {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 50px;
+  justify-content: space-between;
+  background: #def3f6;
+  border-radius: 2px;
+  padding: 10px 20px;
+  transition: 0.3s all ease-out;
+  animation: appereance 0.4s ease-in-out;
+  animation-fill-mode: forwards;
+  &DeletedAnimation {
+    height: 0px;
+    padding: 0 30px 0 5px;
+    overflow: hidden;
+    animation: disappereance 0.4s ease-in-out;
+  }
+  &Checked {
+    background: #1da2d8;
+  }
+  .leftSide {
+    display: flex;
+    gap: 69px;
+  }
+}
+
+.leftSide {
+  min-width: 35%;
+  max-width: 35%;
+
+  .name {
+    white-space: normal;
+    width: calc(100% - 70px - 30px);
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
+
+.address {
+  min-width: 35%;
+  max-width: 35%;
+  line-clamp: 2;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
